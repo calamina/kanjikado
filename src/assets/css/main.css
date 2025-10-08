@@ -1,0 +1,21 @@
+@import "./reset.css";
+@import "./variables.css";
+
+@font-face {
+  font-family: "Inter";
+  src: url("../fonts/Inter-VariableFont_opsz\,wght.ttf") format("truetype")
+}
+
+* {
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  color: var(--text-color);
+}
+
+html {
+  width: 100vw;
+  height: 100dvh;
+  display: grid;
+  place-items: center;
+  background-color: var(--bg-color);
+}

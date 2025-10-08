@@ -1,0 +1,9 @@
+:root {
+  --bg-color: oklch(88% 0.04 0);
+  --bg-color-dim: oklch(80% 0.06 0);
+  --bg-color-secondary: oklch(100% 0.0 0);
+
+  --text-color: oklch(22% 0.1 0);
+  --text-color-dim: oklch(22% 0.1 0 / 0.75);
+  --highlight-color: oklch(65% 0.1 0);
+}
