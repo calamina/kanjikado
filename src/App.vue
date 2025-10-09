@@ -15,8 +15,10 @@ main {
   --line-height: 16rem;
   --line-height: 0;
   width: 100vw;
-  height: calc(100dvh - 8rem);
+  height: 100%;
   display: grid;
   place-items: center;
+  grid-template-rows: 1fr auto;
+  transition: grid-template-rows 0.3s;
 }
 </style>

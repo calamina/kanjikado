@@ -1,49 +1,43 @@
 <script setup lang="ts"></script>
 
 <template>
-  <header>
-    <nav>
-      <RouterLink to="/katakana">katakana</RouterLink>
-      <RouterLink to="/hiragana">hiragana</RouterLink>
-      <RouterLink to="/kanji">kanji</RouterLink>
-    </nav>
-  </header>
+  <nav>
+    <RouterLink to="/">katakana</RouterLink>
+    <RouterLink to="/hiragana">hiragana</RouterLink>
+    <!-- <RouterLink to="/kanji">kanji</RouterLink> -->
+  </nav>
 </template>
 
 <style scoped>
-header {
-  height: 4rem;
-  width: 100vw;
-  display: grid;
-  place-items: center;
-}
-
 nav {
-  display: flex;
-  align-items: center;
-  gap: 2rem;
+  display: grid;
+  /* grid-template-columns: repeat(3, 1fr); */
+  grid-template-columns: repeat(2, 1fr);
+  place-items: center;
+  gap: 0.5rem;
   height: 4rem;
+  width: 100%;
+  padding: 0.5rem;
 }
 
 a {
-  display: flex;
-  align-items: center;
-  border-radius: 2rem;
-  height: 4rem;
-  font-size: 1.75rem;
+  display: grid;
+  place-content: center;
+  border-radius: 0.75rem;
+  height: 100%;
+  width: 100%;
+  font-size: var(--type-1);
   font-weight: 500;
   text-transform: capitalize;
   text-decoration: none;
   color: var(--text-color-dim);
   transition: padding 0.2s, background-color 0.2s, color 0.2s;
+  background-color: var(--bg-color-dim);
 
   &:hover,
   &.router-link-active {
+    background-color: var(--bg-color-secondary);
     color: var(--highlight-color);
-    text-decoration: underline;
-    text-decoration-thickness: 4px;
-    text-underline-offset: 6px;
-    /* background-color: var(--bg-color-secondary); */
   }
 }
 </style>

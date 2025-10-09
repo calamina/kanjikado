@@ -1,5 +1,6 @@
 @import "./reset.css";
 @import "./variables.css";
+@import "./type.css";
 
 @font-face {
   font-family: "Inter";
@@ -18,4 +19,12 @@ html {
   display: grid;
   place-items: center;
   background-color: var(--bg-color);
+  transition: background-color 0.3s;
+}
+
+#app {
+  width: 100vw;
+  height: 100dvh;
+  display: grid;
+  grid-template-rows: 4rem 1fr;
 }

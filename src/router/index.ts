@@ -8,7 +8,7 @@ const router = createRouter({
   routes: [
     // { path: '/', component: HomeView },
     { path: '/hiragana', component: HiraView },
-    { path: '/katakana', component: KanaView },
+    { path: '/', component: KanaView },
     { path: '/kanji', component: KanjiView },
   ],
 })
